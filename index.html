@@ -5,45 +5,79 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>YOPO Frozen Bar — Frozen Yogurt in Uluwatu, Bali</title>
-<meta name="description" content="YOPO Frozen Bar — fresh frozen yogurt, fruit & toppings bar in Pecatu, Uluwatu, Bali. PT YOPO FROZEN BALI.">
+<title>YOPO — Protein Frozen Yogurt Bar · Uluwatu, Bali</title>
+<meta name="description" content="YOPO — self-serve protein frozen yogurt bar in Uluwatu, Bali. High protein, low sugar, real fruit toppings. Swirl it yourself, pay by weight.">
 <style>
   :root{
-    --cream:#FFF8F0; --ink:#2B2320; --berry:#E4567B; --mango:#FFB84C;
-    --mint:#7ED4AD; --soft:#F6E9DC;
+    --ink:#1E1B18; --cream:#FFF9F2; --paper:#FFFFFF;
+    --berry:#F04D7E; --berry-dark:#D13866; --mango:#FFB84C; --mint:#2FB68B;
+    --soft:#F7ECE0; --muted:#6E625A;
   }
   *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
   body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
        background:var(--cream);color:var(--ink);line-height:1.6}
-  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
-  header{padding:28px 0;display:flex;align-items:center;justify-content:space-between}
-  .logo{font-size:28px;font-weight:800;letter-spacing:2px}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+
+  header{padding:22px 0;display:flex;align-items:center;justify-content:space-between}
+  .logo{font-size:26px;font-weight:900;letter-spacing:3px}
   .logo span{color:var(--berry)}
-  nav a{color:var(--ink);text-decoration:none;margin-left:20px;font-weight:600;font-size:15px}
+  nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.5px}
   nav a:hover{color:var(--berry)}
-  .hero{padding:56px 0 48px;text-align:center}
-  .hero h1{font-size:clamp(32px,6vw,54px);font-weight:800;line-height:1.15}
-  .hero h1 em{font-style:normal;color:var(--berry)}
-  .hero p{margin:18px auto 0;max-width:560px;font-size:18px;color:#5a4f49}
-  .badges{margin-top:26px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-  .badge{background:var(--soft);border-radius:999px;padding:8px 18px;font-weight:600;font-size:14px}
-  .cta{margin-top:32px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .btn{display:inline-block;padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:700;font-size:16px}
-  .btn-main{background:var(--berry);color:#fff}
-  .btn-main:hover{background:#c93f65}
-  .btn-ghost{border:2px solid var(--ink);color:var(--ink)}
+
+  .hero{padding:64px 0 40px;text-align:center;position:relative}
+  .kicker{display:inline-block;background:var(--ink);color:#fff;border-radius:999px;
+          padding:7px 18px;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+  .hero h1{margin-top:22px;font-size:clamp(38px,7vw,72px);font-weight:900;line-height:1.02;letter-spacing:-1px}
+  .hero h1 .p1{color:var(--berry)}
+  .hero p.sub{margin:20px auto 0;max-width:620px;font-size:19px;color:var(--muted)}
+  .hero p.id{margin-top:8px;font-size:14px;color:#9a8c82}
+  .cta{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;padding:15px 30px;border-radius:999px;text-decoration:none;font-weight:800;font-size:16px}
+  .btn-main{background:var(--berry);color:#fff;box-shadow:0 6px 18px rgba(240,77,126,.35)}
+  .btn-main:hover{background:var(--berry-dark)}
+  .btn-ghost{border:2.5px solid var(--ink);color:var(--ink)}
   .btn-ghost:hover{background:var(--ink);color:#fff}
-  section{padding:48px 0}
-  h2{font-size:28px;font-weight:800;margin-bottom:18px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-  .card{background:#fff;border-radius:18px;padding:24px;box-shadow:0 2px 10px rgba(43,35,32,.06)}
-  .card h3{font-size:18px;margin-bottom:8px}
-  .card p{font-size:15px;color:#5a4f49}
-  .em-mango{color:var(--mango)} .em-mint{color:#3aa77f} .em-berry{color:var(--berry)}
-  .info p{margin-bottom:6px;font-size:16px}
-  .info a{color:var(--berry);font-weight:600;text-decoration:none}
-  .id-note{font-size:14px;color:#8a7d75;margin-top:8px}
-  footer{border-top:1px solid #eadfd4;padding:28px 0 40px;font-size:14px;color:#8a7d75}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:52px 0 0}
+  .stat{background:var(--paper);border-radius:20px;padding:22px 16px;text-align:center;
+        box-shadow:0 2px 12px rgba(30,27,24,.06)}
+  .stat .num{font-size:34px;font-weight:900;color:var(--berry)}
+  .stat .num.g{color:var(--mint)} .stat .num.m{color:var(--mango)}
+  .stat .lbl{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-top:4px}
+
+  section{padding:56px 0}
+  h2{font-size:32px;font-weight:900;letter-spacing:-.5px;margin-bottom:8px}
+  .lead{color:var(--muted);max-width:640px;margin-bottom:28px}
+
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+  .step{background:var(--paper);border-radius:20px;padding:26px 22px;box-shadow:0 2px 12px rgba(30,27,24,.06);position:relative}
+  .step .n{width:38px;height:38px;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center;
+           font-weight:900;font-size:17px;color:var(--berry);margin-bottom:14px}
+  .step h3{font-size:17px;font-weight:800;margin-bottom:6px}
+  .step p{font-size:14.5px;color:var(--muted)}
+
+  .flavors{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+  .flavor{border-radius:20px;padding:26px 22px;color:#fff;min-height:150px;display:flex;flex-direction:column;justify-content:flex-end}
+  .flavor.berry{background:linear-gradient(140deg,#F04D7E,#C2325F)}
+  .flavor.choco{background:linear-gradient(140deg,#6B4A38,#4A3227)}
+  .flavor.coco{background:linear-gradient(140deg,#2FB68B,#1E8A67)}
+  .flavor.mango{background:linear-gradient(140deg,#FFB84C,#E8952B)}
+  .flavor h3{font-size:19px;font-weight:900}
+  .flavor p{font-size:13.5px;opacity:.92;margin-top:4px}
+  .flavor .tag{align-self:flex-start;background:rgba(255,255,255,.22);border-radius:999px;padding:4px 12px;
+               font-size:11.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:auto}
+
+  .note{margin-top:18px;font-size:13.5px;color:#9a8c82}
+
+  .visit{background:var(--ink);border-radius:28px;color:#fff;padding:44px 36px;display:grid;
+         grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+  .visit h2{color:#fff}
+  .visit p{margin-bottom:8px;font-size:16px}
+  .visit a{color:#FFB84C;font-weight:700;text-decoration:none}
+  .visit .small{font-size:13px;opacity:.7}
+
+  footer{padding:30px 0 44px;font-size:13.5px;color:#9a8c82}
   footer .legal{margin-top:6px}
 </style>
 </head>
@@ -52,57 +86,73 @@
   <header>
     <div class="logo">YO<span>PO</span></div>
     <nav>
-      <a href="#menu">Menu</a>
-      <a href="#visit">Visit us</a>
-      <a href="https://www.instagram.com/yopo.bali" rel="noopener">Instagram</a>
+      <a href="#how">How it works</a>
+      <a href="#flavors">Flavors</a>
+      <a href="#visit">Visit</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Fresh frozen yogurt<br>in the heart of <em>Uluwatu</em></h1>
-    <p>Self-serve froyo bar with real fruit, homemade toppings and Bali vibes.
-       Build your own cup — pay by weight.</p>
-    <p class="id-note">Frozen yogurt segar dengan buah asli dan topping pilihan — di Pecatu, Uluwatu.</p>
-    <div class="badges">
-      <div class="badge">🍦 Real yogurt</div>
-      <div class="badge">🍓 Fresh fruit daily</div>
-      <div class="badge">🥥 Local Bali flavors</div>
-    </div>
+    <span class="kicker">Self-serve · Uluwatu · Bali</span>
+    <h1><span class="p1">Protein</span> frozen yogurt<br>that earns its toppings</h1>
+    <p class="sub">High-protein, low-sugar froyo made for surf days and gym days.
+       Swirl it yourself, stack the toppings, pay by weight. No queues, no guilt.</p>
+    <p class="id">Frozen yogurt tinggi protein, rendah gula — layani sendiri, bayar sesuai berat.</p>
     <div class="cta">
       <a class="btn btn-main" href="https://wa.me/6281337928563">Chat on WhatsApp</a>
       <a class="btn btn-ghost" href="https://www.instagram.com/yopo.bali" rel="noopener">@yopo.bali</a>
     </div>
+
+    <div class="stats">
+      <div class="stat"><div class="num">20g+</div><div class="lbl">Protein per serve</div></div>
+      <div class="stat"><div class="num g">-60%</div><div class="lbl">Less sugar</div></div>
+      <div class="stat"><div class="num m">100%</div><div class="lbl">Real fruit toppings</div></div>
+      <div class="stat"><div class="num">0</div><div class="lbl">Queues — self serve</div></div>
+    </div>
   </section>
 
-  <section id="menu">
-    <h2>What we serve</h2>
-    <div class="grid">
-      <div class="card">
-        <h3 class="em-berry">Froyo cups</h3>
-        <p>Classic tart, coconut and seasonal flavors. Swirl it yourself, top it your way, pay by weight.</p>
+  <section id="how">
+    <h2>How it works</h2>
+    <p class="lead">Grab a cup and build your own — the bar is yours.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Grab a cup</h3><p>One size, any mix. Every cup starts empty and ends legendary.</p></div>
+      <div class="step"><div class="n">2</div><h3>Swirl your froyo</h3><p>Pull the handle yourself — protein froyo, rotating flavors on tap.</p></div>
+      <div class="step"><div class="n">3</div><h3>Stack the toppings</h3><p>Fresh mango, dragon fruit, granola, mochi, nuts, house-made sauces.</p></div>
+      <div class="step"><div class="n">4</div><h3>Weigh &amp; go</h3><p>Pay by weight at the scale. Your cup, your price.</p></div>
+    </div>
+  </section>
+
+  <section id="flavors">
+    <h2>Flavors on tap</h2>
+    <p class="lead">Rotating protein froyo lineup — the wall tells you what's swirling today.</p>
+    <div class="flavors">
+      <div class="flavor berry"><span class="tag">Signature</span><h3>Classic Tart</h3><p>The OG froyo tang, protein-loaded.</p></div>
+      <div class="flavor choco"><span class="tag">Protein hit</span><h3>Dark Chocolate</h3><p>Whey-boosted, dessert-grade cocoa.</p></div>
+      <div class="flavor coco"><span class="tag">Island</span><h3>Coconut</h3><p>Bali classic, cold and clean.</p></div>
+      <div class="flavor mango"><span class="tag">Seasonal</span><h3>Mango</h3><p>Local harvest, blended fresh.</p></div>
+    </div>
+    <p class="note">Lineup rotates — full menu, macros and prices coming with opening. Follow @yopo.bali for the launch date.</p>
+  </section>
+
+  <section>
+    <div class="visit" id="visit">
+      <div>
+        <h2>Find us in Uluwatu</h2>
+        <p>📍 Jl. Labuansait No. 99, Pecatu,<br>Kuta Selatan, Badung, Bali 80361</p>
+        <p>🕒 Open daily 10:00 – 22:00 WITA</p>
       </div>
-      <div class="card">
-        <h3 class="em-mango">Fruit &amp; toppings</h3>
-        <p>Mango, strawberry, dragon fruit, granola, mochi, nuts, chocolate and house-made sauces.</p>
-      </div>
-      <div class="card">
-        <h3 class="em-mint">Smoothies &amp; bowls</h3>
-        <p>Blended fresh to order — perfect after a surf at Padang Padang or a sunset at the cliff.</p>
+      <div>
+        <h2>Say hi</h2>
+        <p>💬 <a href="https://wa.me/6281337928563">WhatsApp +62 813-3792-8563</a></p>
+        <p>📷 <a href="https://www.instagram.com/yopo.bali" rel="noopener">instagram.com/yopo.bali</a></p>
+        <p>✉️ <a href="mailto:yopofrozenbar@gmail.com">yopofrozenbar@gmail.com</a></p>
+        <p class="small">Opening soon — menu &amp; hours may change before launch.</p>
       </div>
     </div>
   </section>
 
-  <section id="visit" class="info">
-    <h2>Visit us</h2>
-    <p>📍 Jl. Labuansait No. 99, Pecatu, Kuta Selatan, Badung, Bali 80361, Indonesia</p>
-    <p>📞 <a href="tel:+6281337928563">+62 813-3792-8563</a></p>
-    <p>💬 <a href="https://wa.me/6281337928563">WhatsApp</a> · 📷 <a href="https://www.instagram.com/yopo.bali" rel="noopener">instagram.com/yopo.bali</a></p>
-    <p>✉️ <a href="mailto:yopofrozenbar@gmail.com">yopofrozenbar@gmail.com</a></p>
-    <p>🕒 Open daily 10:00 – 22:00 WITA</p>
-  </section>
-
   <footer>
-    <div>© 2026 YOPO Frozen Bar</div>
+    <div>© 2026 YOPO — Protein Frozen Yogurt Bar</div>
     <div class="legal">PT YOPO FROZEN BALI · NIB 1506260006846 · Jl. Labuansait, Pecatu, Kuta Selatan, Badung, Bali 80361, Indonesia</div>
   </footer>
 </div>
