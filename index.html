@@ -7,7 +7,7 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="facebook-domain-verification" content="1fix3851ti9sfjzrqqf0dzbkvggbwl">
 <title>YOPO — Protein Frozen Yogurt Bar · Uluwatu, Bali</title>
-<meta name="description" content="YOPO — self-serve protein frozen yogurt bar in Uluwatu, Bali. High protein, low sugar, real fruit toppings. Swirl it yourself, pay by weight.">
+<meta name="description" content="YOPO — self-serve protein frozen yogurt bar in Uluwatu, Bali. High protein, low sugar, real fruit toppings. Fill your cup, pay at the counter.">
 <style>
   :root{
     --ink:#1E1B18; --cream:#FFF9F2; --paper:#FFFFFF;
@@ -60,10 +60,13 @@
 
   .flavors{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
   .flavor{border-radius:20px;padding:26px 22px;color:#fff;min-height:150px;display:flex;flex-direction:column;justify-content:flex-end}
-  .flavor.berry{background:linear-gradient(140deg,#F04D7E,#C2325F)}
   .flavor.choco{background:linear-gradient(140deg,#6B4A38,#4A3227)}
   .flavor.coco{background:linear-gradient(140deg,#2FB68B,#1E8A67)}
   .flavor.mango{background:linear-gradient(140deg,#FFB84C,#E8952B)}
+  .flavor.yogurt{background:linear-gradient(140deg,#FDF3E7,#EFDCC3);color:var(--ink)}
+  .flavor.yogurt .tag{background:rgba(30,27,24,.1)}
+  .flavor.pista{background:linear-gradient(140deg,#AECB86,#84A257)}
+  .flavor.matcha{background:linear-gradient(140deg,#6A994E,#46672F)}
   .flavor h3{font-size:19px;font-weight:900}
   .flavor p{font-size:13.5px;opacity:.92;margin-top:4px}
   .flavor .tag{align-self:flex-start;background:rgba(255,255,255,.22);border-radius:999px;padding:4px 12px;
@@ -97,15 +100,15 @@
     <span class="kicker">Self-serve · Uluwatu · Bali</span>
     <h1><span class="p1">Protein</span> frozen yogurt<br>that earns its toppings</h1>
     <p class="sub">High-protein, low-sugar froyo made for surf days and gym days.
-       Swirl it yourself, stack the toppings, pay by weight. No queues, no guilt.</p>
-    <p class="id">Frozen yogurt tinggi protein, rendah gula — layani sendiri, bayar sesuai berat.</p>
+       Fill your cup, add your toppings, pay at the counter. No queues, no guilt.</p>
+    <p class="id">Frozen yogurt tinggi protein, rendah gula — layani sendiri, bayar di kasir.</p>
     <div class="cta">
-      <a class="btn btn-main" href="https://wa.me/6281337928563">Chat on WhatsApp</a>
+      <a class="btn btn-main" href="mailto:yopofrozenbar@gmail.com">Email us</a>
       <a class="btn btn-ghost" href="https://www.instagram.com/yopo.bali" rel="noopener">@yopo.bali</a>
     </div>
 
     <div class="stats">
-      <div class="stat"><div class="num">20g+</div><div class="lbl">Protein per serve</div></div>
+      <div class="stat"><div class="num">10g</div><div class="lbl">Protein per serve</div></div>
       <div class="stat"><div class="num g">-60%</div><div class="lbl">Less sugar</div></div>
       <div class="stat"><div class="num m">100%</div><div class="lbl">Real fruit toppings</div></div>
       <div class="stat"><div class="num">0</div><div class="lbl">Queues — self serve</div></div>
@@ -117,20 +120,22 @@
     <p class="lead">Grab a cup and build your own — the bar is yours.</p>
     <div class="steps">
       <div class="step"><div class="n">1</div><h3>Grab a cup</h3><p>One size, any mix. Every cup starts empty and ends legendary.</p></div>
-      <div class="step"><div class="n">2</div><h3>Swirl your froyo</h3><p>Pull the handle yourself — protein froyo, rotating flavors on tap.</p></div>
-      <div class="step"><div class="n">3</div><h3>Stack the toppings</h3><p>Fresh mango, dragon fruit, granola, mochi, nuts, house-made sauces.</p></div>
-      <div class="step"><div class="n">4</div><h3>Weigh &amp; go</h3><p>Pay by weight at the scale. Your cup, your price.</p></div>
+      <div class="step"><div class="n">2</div><h3>Fill with froyo</h3><p>Protein froyo on tap — as much as you want.</p></div>
+      <div class="step"><div class="n">3</div><h3>Add fruit &amp; toppings</h3><p>Fresh fruit and toppings — build it your way.</p></div>
+      <div class="step"><div class="n">4</div><h3>Pay at the counter</h3><p>Your cup is weighed at the register — pay by weight.</p></div>
     </div>
   </section>
 
   <section id="flavors">
     <h2>Flavors on tap</h2>
-    <p class="lead">Rotating protein froyo lineup — the wall tells you what's swirling today.</p>
+    <p class="lead">Six protein froyo flavors on tap — always cold, always fresh.</p>
     <div class="flavors">
-      <div class="flavor berry"><span class="tag">Signature</span><h3>Classic Tart</h3><p>The OG froyo tang, protein-loaded.</p></div>
-      <div class="flavor choco"><span class="tag">Protein hit</span><h3>Dark Chocolate</h3><p>Whey-boosted, dessert-grade cocoa.</p></div>
-      <div class="flavor coco"><span class="tag">Island</span><h3>Coconut</h3><p>Bali classic, cold and clean.</p></div>
       <div class="flavor mango"><span class="tag">Seasonal</span><h3>Mango</h3><p>Local harvest, blended fresh.</p></div>
+      <div class="flavor choco"><span class="tag">Protein hit</span><h3>Chocolate</h3><p>Dessert-grade cocoa, protein-loaded.</p></div>
+      <div class="flavor yogurt"><span class="tag">Signature</span><h3>Yogurt</h3><p>The OG froyo tang, clean and classic.</p></div>
+      <div class="flavor coco"><span class="tag">Vegan</span><h3>Coconut</h3><p>Bali classic, 100% plant-based.</p></div>
+      <div class="flavor pista"><span class="tag">Nutty</span><h3>Pistachio</h3><p>Roasted pistachio, smooth and rich.</p></div>
+      <div class="flavor matcha"><span class="tag">Green</span><h3>Matcha</h3><p>Ceremonial-grade green tea kick.</p></div>
     </div>
     <p class="note">Lineup rotates — full menu, macros and prices coming with opening. Follow @yopo.bali for the launch date.</p>
   </section>
@@ -144,7 +149,6 @@
       </div>
       <div>
         <h2>Say hi</h2>
-        <p>💬 <a href="https://wa.me/6281337928563">WhatsApp +62 813-3792-8563</a></p>
         <p>📷 <a href="https://www.instagram.com/yopo.bali" rel="noopener">instagram.com/yopo.bali</a></p>
         <p>✉️ <a href="mailto:yopofrozenbar@gmail.com">yopofrozenbar@gmail.com</a></p>
         <p class="small">Opening soon — menu &amp; hours may change before launch.</p>
