@@ -1,0 +1,8 @@
+# Всё запрещено, кроме файлов сайта (защита от случайной выкладки личных файлов)
+/*
+!/index.html
+!/privacy.html
+!/CNAME
+!/assets/
+!/.gitignore
+!/.nojekyll
