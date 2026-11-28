@@ -321,6 +321,10 @@
     html{scroll-behavior:auto}.f{transition:none}.track{animation:none}.bun{animation:none}.bg,.mega,.metal::before{animation:none}
     .sk *{animation:none!important;stroke-dashoffset:0!important;opacity:1!important}
   }
+/* Надписи с переливом (background-clip:text): фон должен покрывать буквы целиком, иначе срезается верх (правка 28.11.2026; проверщик site-checks/text-clip-check.mjs). Поля расширяют закрашиваемую область, отрицательный отступ возвращает раскладку на место. */
+.hero h1 span,.label h2,.badge small,.t .name,.t .p b,.t .p span{padding-block:.25em;margin-block:-.25em}
+.badge b{padding-block:.25em;margin-block:calc(2px - .25em)}
+.hero h1,.t .p{display:grid} /* внутри сетки отступы строк не сливаются — раскладка остаётся прежней */
 </style>
 </head>
 <body>
